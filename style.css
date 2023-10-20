@@ -1,0 +1,53 @@
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer; 
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+ul li span button:hover{
+    background-color: #571717;
+}
+
+li button{
+    justify-content: end;
+    background-color: #b91212;
+    color: #fff;
+}
+
+.notif{
+    border: none;
+    font-size: 30px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+.notif::before{
+    content: attr(data-counter);
+    background: #b91212;
+    position: absolute;
+    border-radius: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    right: -8px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+
+.afficheNotif{
+   display: none;
+}
+
+.afficheNotif.isVisible{
+    display: block;
+}
+
+
